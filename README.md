@@ -1,39 +1,32 @@
 GrainBrick
-A free granular ambient sound instrument for TrimUI Brick.
+A free experimental granular sound instrument for Linux-based handheld gaming consoles.
 
-GrainBrick turns audio samples into evolving, organic textures with granular processing, tape-style sound shaping, effects and the ORBIX generative note engine.
+GrainBrick turns samples and live audio into evolving ambient textures, drones, rhythmic patterns and generative sounds. It combines granular synthesis, a physical-modeling resonator (ORBIX), wavetable oscillators, effects and tape-style sound shaping. GrainBrick is designed for hands-on exploration rather than traditional multitrack production.
+Current release: GrainBrick Beta 2.0
+Download GrainBrick from Releases
 
-It is designed for hands-on ambient exploration and sound design - not a tracker, sequencer or traditional looper.
-GrainBrick beta 1.0
-This is the first public beta for the original TrimUI Brick running KNULLI.
-Features
-- Granular sample processing and evolving ambient textures
-- ORBIX generative note engine
-- Reverb, delay, shimmer and other sound-shaping effects
-- Tape-style processing
-- Recording and trimming audio, including the Brick's internal microphone
-- USB audio input/output support on compatible devices
-- Project saving and contextual parameter help
-Download
-Open the repository's Releases section and download:
-
-GrainBrick_beta_1.0_TrimUI_Brick_KNULLI.zip
-
-Do not download GitHub's automatically generated “Source code” ZIP - that is not the application.
-Compatibility
-- Tested: original TrimUI Brick with KNULLI
-- Requires a compatible AArch64 KNULLI installation providing Python 3.12, Pygame and NumPy
-- Other handhelds, operating systems and TrimUI Brick Pro have not been confirmed compatible
-Installation
-1. Download the release ZIP and extract its contents.
-2. Copy both grainbrick-beta/ and GrainBrick beta 1.0.sh to the Brick's /userdata/roms/ports/ directory.
-3. Refresh your PORTS list in KNULLI.
-4. Launch GrainBrick beta 1.0.
-
-When upgrading, preserve your own samples, projects, recordings and settings. Do not delete your existing grainbrick-beta/ folder without backing them up.
+New in Beta 2.0:
+- LIVE MODE: real-time granular processing from supported audio inputs.
+- RHYTHM: slice-based patterns, variations, reverse and tempo controls.
+- Expanded ORBIX: physical-modeling resonator with internal and external excitation.
+- OSCILLATOR: two wavetable oscillators with SHAPE, SYNTH and HYBRID modes.
+- GRAIN 2 / GRAIN 3: extended grain controls and manual harmonic scale settings.
+- Global tempo: BPM, LINK time-stretch, metronome and tempo detection.
+- MIDI: MIDI Learn, MIDI Clock/transport and experimental BLE MIDI support on compatible hardware.
+- Visuals: Signal Weave, Cymatics, Solar Orbits and Ornate Mandala.
+- OUTPUT BOOST: global listening-level adjustment (0 to +12 dB).
+- Performance and usability: improvements to DSP, graphics, controls and contextual help.
+Tested devices
+- TrimUI Brick (original) — KNULLI
+- Anbernic RG40XXV — KNULLI
+Other handhelds may work, but they have not been validated with this exact Beta 2.0 release. Hardware-specific functions such as USB audio and BLE MIDI depend on OS and peripheral support.
+Install
+1. Open Releases and download the attached GrainBrick_BETA_2_0.zip. Do not download GitHub's automatically generated "Source code" archive instead.
+2. Extract it into /userdata/roms/ports/.
+3. Confirm that both grainbrick-beta2/ and GrainBrick BETA 2.0.sh are in ports/.
+4. Refresh the PORTS menu if necessary and launch GrainBrick BETA 2.0.
+Beta 2.0 installs separately from Beta 1.0.1. Back up your own projects, samples, recordings and settings before deleting any older installation.
 Feedback
-This is a beta release. Please use the repository's Issues section to report reproducible bugs and hardware compatibility findings, including your OS version and device model.
+This is experimental software. Please use Issues to report bugs and compatibility results, including the device, firmware version, expected behavior, actual behavior and steps to reproduce.
 Licensing
-GrainBrick is free to download, but its original application source code is currently closed. An open public beta does not mean that the GrainBrick source code is open source.
-
-The distribution includes notices and applicable source materials for its bundled third-party components, including LGPL-licensed SoundTouch. See THIRD_PARTY_NOTICES.md, THIRD_PARTY_LICENSES/ and THIRD_PARTY_SOURCES/ inside the downloadable release.
+GrainBrick is free to download, but its original application code is not currently licensed as open source. The release contains license notices and, where required, source materials for bundled third-party components. See THIRD_PARTY_NOTICES.md, THIRD_PARTY_LICENSES/, THIRD_PARTY_SOURCES/ and the ORBIX resonator notices inside the downloadable ZIP.
